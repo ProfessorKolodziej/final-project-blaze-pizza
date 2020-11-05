@@ -1,0 +1,51 @@
+/* CSS files add styling rules to your content */
+body{
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.title{
+  background-color:#6C0E0C;
+  height:40px;
+  width:160px;
+  border-radius:30px;
+  color:white;
+  text-align:center;
+  padding-top:18px;
+  paddinf-bottom:18px;
+  margin-left:125px;
+}
+
+.stove{
+  position:absolute;
+  max-width:200px;
+}
+
+.first-paragraph{
+  margin-top:30px;
+  margin-left:200px;
+  color:white;
+}
+
+.second-paragraph{
+  position:absolute;
+  color:white;
+  margin-right:200px;
+}
+
+.pizza-in-pan{
+  max-width:200px;
+  margin-left:200px;
+  margin-top:50px;
+}
+
+.pizza{
+  max-width:200px;
+  margin-top:100px;
+  position:absolute;
+}
+
+.third-paragraph{
+  margin-left:200px;
+  margin-top:100px;
+  color:white;
+}
