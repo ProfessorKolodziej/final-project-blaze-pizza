@@ -1,4 +1,18 @@
 body{
-  font-family: 'Josefin Sans', sans-serif;
+font-family: 'Josefin Sans';
+  font-size:15px;
   text-align:center;
+}
+
+.loading{
+  background-color:white;
+  padding:10px;
+  border-radius:15px;
+    font-size:12px;
+  color:grey;
+}
+
+.orderlist{
+  text-align:right;
+  list-style-type:none;
 }

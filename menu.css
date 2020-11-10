@@ -1,0 +1,21 @@
+body{
+  font-family:'Josefin Sans', sans-serif;
+}
+
+.byo{
+  text-align:center;
+  background-color:#6C0E0C;
+  border-radius:15px;
+  padding:1px;
+}
+
+.size{
+  text-align:center;
+}
+
+.dropdownmenu{
+  background-color:white;
+  padding:15px;
+  width:150px;
+  border-radius:15px;
+}
