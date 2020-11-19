@@ -1,7 +1,39 @@
+
+/* CSS files add styling rules to your content */
+
 body{
-font-family: 'Josefin Sans';
-  font-size:15px;
+font-family: 'Josefin Sans', sans-serif;
+}
+
+.logo{
+  max-width:80;
+}
+
+.title{
+  background-color:#F6CA57;
+  border-radius:25px;
+  margin-left:35%;
+  width:90px;
+  height:20px;;
+  font-size:80%;
   text-align:center;
+  padding-top:6px;
+  color:white;
+}
+
+.cart-button{
+  background-color:#D34F09;
+  color:white;
+  height:30px;
+  width:140px;
+  text-align:center;
+  padding-top:14px;
+  border-radius:30px;
+}
+
+.menu{
+ display:grid;
+ grid-template-columns:repeat(2,1fr);
 }
 
 .sidepanel  {
@@ -53,29 +85,3 @@ font-family: 'Josefin Sans';
   .openbtn:hover {
     background-color:#F6C041;
   }
-
-.title{
-    background-color:#F6CA57;
-  border-radius:25px;
-  margin-left:34%;
-  width:110px;
-  height:20px;;
-  font-size:80%;
-  text-align:center;
-  padding-top:6px;
-  color:white;
-  
-}
-
-.loading{
-  background-color:white;
-  padding:10px;
-  border-radius:15px;
-    font-size:12px;
-  color:grey;
-}
-
-.orderlist{
-  text-align:right;
-  list-style-type:none;
-}
