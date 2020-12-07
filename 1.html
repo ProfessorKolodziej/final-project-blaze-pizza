@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="/maingreen.css" />
+    <script src="/maingreen.js" defer></script>
+  <head>
+      <!-- This is the background image  -->
+   <style>
+     body {
+  background-image: url('https://cdn.glitch.com/7e934bf3-11ca-4ed8-bb0e-af5a28599d9f%2Fmobile%20green%20background.png?v=1604358440560');
+  background-size: 100%;
+  ;
+     }
+    </style>
+    <title>maingreen</title>
+    
+  </head>  
+<!-- This is the html  -->
+  <body>
+    <img class="logo" src="https://cdn.glitch.com/7e934bf3-11ca-4ed8-bb0e-af5a28599d9f%2F24403.png?v=1604357916769" alt="logo" />
+    <div class="byo">
+    <h5>BUILD YOUR OWN</h5></div>
+    <img class="pizza" src="https://cdn.glitch.com/66b79a4c-6736-4abd-a3f0-36c3e17cba4e%2Fblaze%20pizza%202.png?v=1605678084324" />
+    
+    <div id="mySidepanel" class="sidepanel">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="1.html">Home</a>
+    <a href="new-pizza.html">New Pizzas</a>
+    <a href="about-blaze.html">Blaze Pizza</a>
+    <a href="about-us.html">About us</a>
+  </div>
+  
+  <button class="openbtn" onclick="openNav()">☰</button>  
+    <h4>
+        <div style="text-align:center">
+          
+            <button id="myBtn" onclick="1">S</button>    
+             <button id="myBtn1" onclick="1">M</button>
+                     <button id="myBtn2" onclick="1">L</button>
+            
+                        <p id="demo">Price</p>
+      </div>
+      
+          <button id="myFinish" >Finish</button>
+</h4>
+
+    <!-- This is the CSS  -->
+
+    <style>
+      .logo{
+        max-width:80%;
+      }
+body{
+  font-family:'Josefin Sans', sans-serif;
+  text-align:center;
+  color:white;
+}
+      .pizza{
+        max-width:50%;
+        margin-top:50px;
+        margin-right:13%;
+        
+        
+      }
+
+.byo{
+  background-color:#F6CA57;
+  border-radius:25px;
+  margin-left:34%;
+  width:100px;
+  font-size:52%;
+  text-align:center;
+
+}
+
+.sidepanel  {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 250px;
+    top: 0;
+    left: 0;
+    background-color: #F6C041;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    border-radius:20px;
+  }
+  
+  .sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #FFFFFF;
+    display: block;
+    transition: 0.3s;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  
+  .sidepanel a:hover {
+    color: #E26B2B;
+  }
+  
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+   background-color: transparent;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius:10px;
+    float: left;
+  }
+  
+  .openbtn:hover {
+    background-color:#F6C041;
+  }
+
+#myBtn{
+    color:black;
+    border: none;
+    background-color: inherit;
+     padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+    border-radius:35px;
+
+}
+
+
+#myBtn:hover {
+  color: white;
+  font-size:30px;
+    font-weight:bolder;
+    background-color:#F6CA57;
+}    
+
+#myBtn1{
+    color:black;
+    border: none;
+    background-color: inherit;
+     padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+    border-radius:35px;
+}
+
+#myBtn1:hover {
+  background-color: #F6CA57;
+  color: white;
+  font-size:30px;
+    font-weight:bolder;
+}    
+
+#myBtn2{
+    color:black;
+    border: none;
+    background-color: inherit;
+     padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+    border-radius:35px;
+}
+
+#myBtn2:hover {
+  background-color: #F6CA57;
+  color: white;
+  font-size:30px;
+    font-weight:bolder;
+}    
+
+#demo{
+    color:black;
+}
+      
+#myFinish{
+  color:black;
+    border: none;
+    background-color: white;
+     padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+    border-radius:35px; 
+      }
+      
+     
+      #myFinish:hover {
+        background-color: #F6CA57;
+  color: white;
+  font-size:20px;
+    font-weight:bolder;
+      }
+ </style>
+
+<!-- This is the JS  -->
+
+<script>
+document.getElementById("myBtn").addEventListener("click", myFunction);
+function myFunction() {
+  document.getElementById("demo").innerHTML = "$9.95";
+}
+
+document.getElementById("myBtn1").addEventListener("click", myFunction1);
+function myFunction1() {
+  document.getElementById("demo").innerHTML = "$14.95";
+}
+
+document.getElementById("myBtn2").addEventListener("click", myFunction2);
+function myFunction2() {
+  document.getElementById("demo").innerHTML = "$19.95";
+}
+
+function openNav() {
+          document.getElementById("mySidepanel").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidepanel").style.width = "0";
+        }
+
+  document.getElementById("myFinish").onclick = function () {
+        location.href = "shoppingcart.html";
+    };
+
+
+</script>
+   
+  </body>
+</html>
