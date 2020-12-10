@@ -1,23 +1,22 @@
 // Add your scripts here
 const $ = require('jquery');
 
-document.getElementById('myBtn').addEventListener('click', myFunction);
 function myFunction() {
   document.getElementById('demo').innerHTML = '$9.95';
   document.getElementById('myBtn').classList.add('active');
   document.getElementById('myBtn1').classList.remove('active');
   document.getElementById('myBtn2').classList.remove('active');
 }
+document.getElementById('myBtn').addEventListener('click', myFunction);
 
-document.getElementById('myBtn1').addEventListener('click', myFunction1);
 function myFunction1() {
   document.getElementById('demo').innerHTML = '$14.95';
   document.getElementById('myBtn').classList.remove('active');
   document.getElementById('myBtn1').classList.add('active');
   document.getElementById('myBtn2').classList.remove('active');
 }
+document.getElementById('myBtn1').addEventListener('click', myFunction1);
 
-document.getElementById('myBtn2').addEventListener('click', myFunction2);
 function myFunction2() {
   document.getElementById('demo').innerHTML = '$19.95';
 
@@ -25,20 +24,20 @@ function myFunction2() {
   document.getElementById('myBtn1').classList.remove('active');
   document.getElementById('myBtn2').classList.add('active');
 }
-
+document.getElementById('myBtn2').addEventListener('click', myFunction2);
 function openNav() {
   document.getElementById('mySidepanel').style.width = '250px';
 }
 document.getElementById('openbtn').addEventListener('click', openNav);
 
-$(".closebtn").click(function(){
+$('.closebtn').click(() => {
   if (document.getElementById('mySidepanel') !== null) {
     document.getElementById('mySidepanel').style.width = '0';
   }
-})
+});
 
 document.getElementById('myFinish').onclick = function () {
-  location.href = 'shoppingcart.html';
+  window.location.href = './shoppingcart.html';
 };
 
 document.querySelector('body').onscroll = function () {
@@ -51,129 +50,125 @@ document.querySelector('body').onscroll = function () {
   }
 };
 
-$('.clickDouth').click(function(){
-  console.log('run')
+$('.clickDouth').click(function () {
+  console.log('run');
   console.log($(this).data('image'));
   const isActive = $(this).hasClass('individual-item-orange');
-  $('#dough-list li').each(function (i) {
+  $('#dough-list li').each(function () {
     $(this).removeClass('individual-item-orange');
     $(this).removeClass('individual-item-orange');
     $(this).addClass('individual-item');
   });
-  if (isActive == true) {
+  if (isActive === true) {
     $('#Dough').attr('src', '');
     $(this).addClass('individual-item');
     $(this).removeClass('individual-item-orange');
   }
-  if (isActive == false) {
+  if (isActive === false) {
     $('#Dough').attr('src', $(this).data('image'));
     $(this).addClass('individual-item-orange');
     $(this).removeClass('individual-item');
   }
-})
+});
 
-
-
-$('.clickSauce').click(function(){
+$('.clickSauce').click(function () {
   const isActive = $(this).hasClass('individual-item-orange');
-  $('#sauce-list li').each(function (i) {
+  $('#sauce-list li').each(function () {
     $(this).removeClass('individual-item-orange');
     $(this).removeClass('individual-item-orange');
     $(this).addClass('individual-item');
   });
-  if (isActive == true) {
+  if (isActive === true) {
     $('#Sauce').attr('src', '');
     $(this).addClass('individual-item');
     $(this).removeClass('individual-item-orange');
   }
-  if (isActive == false) {
+  if (isActive === false) {
     $('#Sauce').attr('src', $(this).data('image'));
     $(this).addClass('individual-item-orange');
     $(this).removeClass('individual-item');
   }
-})
+});
 
-$('.clickCheese').click(function(){
-  console.log("work")
+$('.clickCheese').click(function () {
+  console.log('work');
   const isActive = $(this).hasClass('individual-item-orange');
-  $('#cheese-list li').each(function (i) {
+  $('#cheese-list li').each(function () {
     $(this).removeClass('individual-item-orange');
     $(this).removeClass('individual-item-orange');
     $(this).addClass('individual-item');
   });
-  if (isActive == true) {
+  if (isActive === true) {
     $('#Cheese').attr('src', '');
     $(this).addClass('individual-item');
     $(this).removeClass('individual-item-orange');
   }
-  if (isActive == false) {
-    $('#Cheese').attr('src',  $(this).data('image'));
+  if (isActive === false) {
+    $('#Cheese').attr('src', $(this).data('image'));
     $(this).addClass('individual-item-orange');
     $(this).removeClass('individual-item');
   }
-})
+});
 
-
-
-$('.clickMeats').click(function(){
-  console.log("work")
+$('.clickMeats').click(function () {
+  console.log('work');
   const isActive = $(this).hasClass('individual-item-orange');
-  $('#meats-list li').each(function (i) {
+  $('#meats-list li').each(function () {
     $(this).removeClass('individual-item-orange');
     $(this).removeClass('individual-item-orange');
     $(this).addClass('individual-item');
   });
-  if (isActive == true) {
+  if (isActive === true) {
     $('#Meats').attr('src', '');
     $(this).addClass('individual-item');
     $(this).removeClass('individual-item-orange');
   }
-  if (isActive == false) {
+  if (isActive === false) {
     $('#Meats').attr('src', $(this).data('image'));
     $(this).addClass('individual-item-orange');
     $(this).removeClass('individual-item');
   }
-})
+});
 
-$('.clickVeggies').click(function(){
-  console.log("work")
+$('.clickVeggies').click(function () {
+  console.log('work');
   const isActive = $(this).hasClass('individual-item-orange');
-  $('#veggies-list li').each(function (i) {
+  $('#veggies-list li').each(function () {
     $(this).removeClass('individual-item-orange');
     $(this).removeClass('individual-item-orange');
     $(this).addClass('individual-item');
   });
-  if (isActive == true) {
+  if (isActive === true) {
     $('#Veggies').attr('src', '');
     $(this).addClass('individual-item');
     $(this).removeClass('individual-item-orange');
   }
-  if (isActive == false) {
-    $('#Veggies').attr('src',$(this).data('image'));
+  if (isActive === false) {
+    $('#Veggies').attr('src', $(this).data('image'));
     $(this).addClass('individual-item-orange');
     $(this).removeClass('individual-item');
   }
-})
+});
 
-$('.clickFinishes').click(function(){
-  console.log("work")
+$('.clickFinishes').click(function () {
+  console.log('work');
   const isActive = $(this).hasClass('individual-item-orange');
-  $('#finishes-list li').each(function (i) {
+  $('#finishes-list li').each(function () {
     $(this).removeClass('individual-item-orange');
     $(this).removeClass('individual-item-orange');
     $(this).addClass('individual-item');
   });
-  if (isActive == true) {
+  if (isActive === true) {
     $('#Finishes').attr('src', '');
     $(this).addClass('individual-item');
     $(this).removeClass('individual-item-orange');
   }
-  if (isActive == false) {
+  if (isActive === false) {
     $('#Finishes').attr('src', $(this).data('image'));
     $(this).addClass('individual-item-orange');
     $(this).removeClass('individual-item');
   }
-})/* If you're feeling fancy you can add interactivity
+});/* If you're feeling fancy you can add interactivity
     to your site with Javascript */
 
 // prints "hi" in the browser's dev tools console

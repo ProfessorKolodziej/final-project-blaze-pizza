@@ -17,7 +17,6 @@ body {
 	width: 100%;
 	padding-top: 53px;
 	margin-right: 13%;
-	
 }
 
 .pizza_background {
@@ -39,10 +38,10 @@ body {
 
 @media only screen and (min-width: 1024px) {
 	.pizza {
-		width: 180%;
+		width: 200%;
 		position: relative;
-		left: 250px;
-		top: 10px;
+		right: 180px;
+		top: 280px;
 	}
 
 	.sml {
@@ -229,15 +228,14 @@ body {
 .byo {
 	background-color: #b1b1b1;
 	border-radius: 25px;
-	margin-left: 175px;
 	margin-top: 10px;
 	width: 130px;
 	height: 30px;
 	font-size: 8px;
-	margin-left: auto;
 	margin-right: auto;
 	padding: 1px;
 	position: relative;
+	left:450px;
 	top: 15px;
 	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
 }
@@ -379,7 +377,6 @@ body {
 #myFinish {
 	color: white;
 	border: none;
-	width: 20px;
 	background-color: #162937;
 	width: 150px;
 	padding: 15px;
@@ -491,7 +488,6 @@ h2 {
 	padding: 15px 20px;
 	width: 238px;
 	position: relative;
-	right: 35px;
 	font-family: "Josefin Sans", sans-serif;
 	color: #707070;
 	font-weight: 700;
@@ -505,7 +501,6 @@ h2 {
 	padding: 15px 20px;
 	width: 238px;
 	position: relative;
-	right: 35px;
 	font-family: "Josefin Sans", sans-serif;
 	color: white;
 	margin: 15px;
@@ -587,9 +582,11 @@ h2 {
 	}
 
 	.pizza {
-		width: 120%;
-		margin-left: -10%;
-		margin-top: -10%;
+		width: 220%;
+		position: relative;
+		top:200px;
+		right:390px;
+		
 	}
 
 	.pizza_image {
@@ -644,6 +641,7 @@ h2 {
 
 	.byo {
 		padding: 5px;
+		margin-left: 315px;
 	}
 
 	.openbtn {
