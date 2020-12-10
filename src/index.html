@@ -1,15 +1,435 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Update your description here" />
-	<title>Update your title here</title>
-</head>
-<body>
-	<main class="content-container">
-		<h1 class="page-heading">Welcome to your final project!</h1>
-	</main>
-</body>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;700&display=swap"
+      rel="stylesheet"
+    />
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.5.1.js"></script>
+  
+  <head>
+
+    <title>maingreen</title>
+  </head>
+  
+  <body style="margin: 0;">
+    <section class="blue-background">
+      <img
+        class="logo"
+        src="https://cdn.glitch.com/66b79a4c-6736-4abd-a3f0-36c3e17cba4e%2Fblazepizza2.png?v=1606339326770"
+        alt="logo"
+      />
+      <div class="byo">
+        <h1>BUILD YOUR OWN</h1>
+      </div>
+
+      <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="index.html">Home</a>
+        <a href="new-pizza.html">New Pizzas</a>
+        <a href="about-blaze.html">Blaze Pizza</a>
+        <a href="about-us.html">About us</a>
+      </div>
+      <button class="openbtn" onclick="openNav()">☰</button>
+      <div></div>
+      <div class="pizza_background">
+        <img class="pizza" id="pizza" src="https://cdn.glitch.com/66b79a4c-6736-4abd-a3f0-36c3e17cba4e%2F%E6%9C%AA%E5%91%BD%E5%90%8D%E4%BD%9C%E5%93%81.png?v=1606947566662"
+        />
+      </div>
+      <div class="pizza_div">
+        <img class="pizza_image" id="Dough" />
+      </div>
+
+      <div class="sauce_div">
+        <img class="sauce_image" id="Sauce"  />
+      </div>
+      
+      <div class="cheese_div">
+        <img class="cheese_image" id="Cheese"  />
+      </div>
+
+      <div class="meats_div">
+        <img class="meats_image" id="Meats" />
+      </div>
+      
+      <div class="veggies_div">
+        <img class="veggies_image" id="Veggies" />
+      </div>
+      
+      <div class="finishes_div">
+        <img class="finishes_image" id="Finishes"  />
+      </div>
+      
+      <div class="sml">
+        <button id="myBtn" onclick="1">S</button>
+        <button id="myBtn1" onclick="1">M</button>
+        <button id="myBtn2" onclick="1">L</button>
+
+        <p id="demo">Price</p>
+      </div>
+    </section>
+    <div class="yellow_background">
+    <section class="yellow-background">
+      <div>
+        
+     
+      <div class = "dough_title">
+  
+      </div>
+           <h2 class="dough_title">Dough</h2>
+      <div class="dough">
+        <ul class="ingredient-list" id="dough-list">
+          <li
+            class="individual-item"
+            onclick="selectDouth(this,'https://cdn.glitch.com/66b79a4c-6736-4abd-a3f0-36c3e17cba4e%2F%E6%9C%AA%E5%91%BD%E5%90%8D%E4%BD%9C%E5%93%81.png?v=1606947566662')"
+          >
+            Class Dough<span class="vegan-choice">(vegan)</span>
+          </li>
+          <li
+            class="individual-item"
+            onclick="selectDouth(this,'https://cdn.glitch.com/66b79a4c-6736-4abd-a3f0-36c3e17cba4e%2Fgluten_dough.png?v=1606947903943')"
+          >
+            Gluten-Dough<span class="vegan-choice">(vegan)</span>
+          </li>
+          <li
+            class="individual-item"
+            onclick="selectDouth(this,'https://cdn.glitch.com/66b79a4c-6736-4abd-a3f0-36c3e17cba4e%2Fcauliflower.png?v=1606948165325')"
+          >
+            Cauliflower<span class="vegan-choice"
+              >(GF, contains dairy&eggs)</span
+            >
+          </li>
+          <li
+            class="individual-item"
+            onclick="selectDouth(this,'https://cdn.glitch.com/66b79a4c-6736-4abd-a3f0-36c3e17cba4e%2Fhigh-rise.png?v=1606948458403')"
+          >
+            High-Rise Dough<span class="vegan-choice">(vegan)</span>
+          </li>
+          <li
+            class="individual-item"
+            onclick="selectDouth(this,'https://cdn.glitch.com/66b79a4c-6736-4abd-a3f0-36c3e17cba4e%2Fketo%20dough.png?v=1606948576760')"
+          >
+            Keto Crust<span class="vegan-choice"
+              >(GF, contains dairy&eggs)
+            </span>
+          </li>
+        </ul>
+      </div>
+ </div>
+      <div>
+        
+      
+      <h2 class="sauce_title">
+        Sauce
+      </h2>
+      <div class="sauce">
+        <ul class="ingredient-list" id="sauce-list">
+          <li
+            class="individual-item"
+            onclick="selectSauce(this,'https://cdn.glitch.com/66b79a4c-6736-4abd-a3f0-36c3e17cba4e%2Fred%20sauce.png?v=1606947913100')"
+          >
+            Red Sauce
+          </li>
+          <li class="individual-item" onclick="selectSauce(this,'https://cdn.glitch.com/66b79a4c-6736-4abd-a3f0-36c3e17cba4e%2Fwhite%20sauce.png?v=1606947912788')">
+            White Cream Sauce
+          </li>
+          <li class="individual-item" onclick="selectSauce(this,'https://cdn.glitch.com/66b79a4c-6736-4abd-a3f0-36c3e17cba4e%2Fspicy%20sauce.png?v=1606947911789')">
+            Spicy Red Sauce
+          </li>
+          <li class="individual-item" onclick="selectSauce(this,'https://cdn.glitch.com/66b79a4c-6736-4abd-a3f0-36c3e17cba4e%2Fred%20sauce.png?v=1606947913100')">
+            Red Sauce Dollops
+          </li>
+          <li class="individual-item" onclick="selectSauce(this,'https://cdn.glitch.com/66b79a4c-6736-4abd-a3f0-36c3e17cba4e%2Fgarlic%20sauce.png?v=1606947908644')">
+            Garlics Pesto Sauce
+          </li>
+          <li class="individual-item" onclick="selectSauce(this,'')">
+            No Sauce
+          </li>
+        </ul>
+      </div>
+         </div>
+      <div>
+        
+      
+      <h2 class="cheese_title">
+        Cheese
+      </h2>
+      <div class="cheese">
+        <ul class="ingredient-list" id="cheese-list">
+          <li
+            class="individual-item"
+            onclick="selectCheese(this,'https://cdn.glitch.com/66b79a4c-6736-4abd-a3f0-36c3e17cba4e%2Fmozzerella.png?v=1607296412284')"
+          >
+            Shredded Mozzarella
+          </li>
+          <li
+            class="individual-item"
+            onclick="selectCheese(this,'https://cdn.glitch.com/66b79a4c-6736-4abd-a3f0-36c3e17cba4e%2Fgorgonzola.png?v=1607296417296')"
+          >
+            Gorgonzola
+          </li>
+          <li
+            class="individual-item"
+            onclick="selectCheese(this,'https://cdn.glitch.com/66b79a4c-6736-4abd-a3f0-36c3e17cba4e%2Fovalini.png?v=1607296412045')"
+          >
+            Ovalini Mozzarella
+          </li>
+          <li
+            class="individual-item"
+            onclick="selectCheese(this,'https://cdn.glitch.com/66b79a4c-6736-4abd-a3f0-36c3e17cba4e%2Fparmesan.png?v=1607296412694')"
+          >
+            Parmesan
+          </li>
+          <li
+            class="individual-item"
+            onclick="selectCheese(this,'https://cdn.glitch.com/66b79a4c-6736-4abd-a3f0-36c3e17cba4e%2Frecotta.png?v=1607296411890')"
+          >
+            Ricotta
+          </li>
+          <li
+            class="individual-item"
+            onclick="selectCheese(this,'https://cdn.glitch.com/66b79a4c-6736-4abd-a3f0-36c3e17cba4e%2Ffeta.png?v=1607296417743')"
+          >
+            Feta Cheese
+          </li>
+          <li
+            class="individual-item"
+            onclick="selectCheese(this,'https://cdn.glitch.com/66b79a4c-6736-4abd-a3f0-36c3e17cba4e%2Fgoat.png?v=1607296417215')"
+          >
+            Goat Cheese
+          </li>
+          <li
+            class="individual-item"
+            onclick="selectCheese(this,'https://cdn.glitch.com/66b79a4c-6736-4abd-a3f0-36c3e17cba4e%2Fvegan.png?v=1607296412854')"
+          >
+            Vegan Cheese
+          </li>
+          <li
+            class="individual-item"
+            onclick="selectCheese(this,'')"
+          >
+            No Cheese
+          </li>
+        </ul>
+      </div>
+         </div>
+      <div>
+        
+      
+
+      <h2 class="meats_title">
+        Meats
+      </h2>
+      <div class="meats">
+        <ul class="ingredient-list" id="meats-list">
+          <li
+            class="individual-item"
+            onclick="selectMeats(this,'https://cdn.glitch.com/66b79a4c-6736-4abd-a3f0-36c3e17cba4e%2Fbacon.png?v=1606954039507')"
+          >
+            Applewood Bacon
+          </li>
+          <li class="individual-item" onclick="selectMeats(this,'https://cdn.glitch.com/66b79a4c-6736-4abd-a3f0-36c3e17cba4e%2Fspicy%20sausage.png?v=1607372678718')">
+            Spicy Chorizo
+          </li>
+          <li class="individual-item" onclick="selectMeats(this,'https://cdn.glitch.com/66b79a4c-6736-4abd-a3f0-36c3e17cba4e%2Fchicken%20sausage.png?v=1606954040325')">
+            <span class="new">NEW</span>Ghost Pepper Chicken Meatballs
+          </li>
+          <li class="individual-item" onclick="selectMeats(this,'https://cdn.glitch.com/66b79a4c-6736-4abd-a3f0-36c3e17cba4e%2Fgrilled%20chicken.png?v=1606954040065')">
+            Grilled Chicken
+          </li>
+          <li class="individual-item" onclick="selectMeats(this,'https://cdn.glitch.com/66b79a4c-6736-4abd-a3f0-36c3e17cba4e%2Fitalian%20sausage.png?v=1606954044645')">
+            Italian Sausage
+          </li>
+          <li class="individual-item" onclick="selectMeats(this,'https://cdn.glitch.com/66b79a4c-6736-4abd-a3f0-36c3e17cba4e%2Fpepperoni.png?v=1606954040357')">
+            Pepperoni
+          </li>
+          <li class="individual-item" onclick="selectMeats(this,'https://cdn.glitch.com/66b79a4c-6736-4abd-a3f0-36c3e17cba4e%2Fham%20.png?v=1606954037881')">
+            Smoked Ham
+          </li>
+        </ul>
+      </div>
+        </div>
+      <div>
+        
+      <h2 class="veggies_title">
+        Veggies
+      </h2>
+      <div class="veggies">
+        <ul class="ingredient-list" id="veggies-list">
+          <li
+            class="individual-item"
+            onclick="selectVeggies(this,'https://cdn.glitch.com/66b79a4c-6736-4abd-a3f0-36c3e17cba4e%2FArtichokes.png?v=1607294586061')"
+          >
+            Artichokes
+          </li>
+          <li
+            class="individual-item"
+            onclick="selectVeggies(this,'https://cdn.glitch.com/66b79a4c-6736-4abd-a3f0-36c3e17cba4e%2Fbanana_peppers.png?v=1607293775688')"
+          >
+            Banana Peppers
+          </li>
+          <li
+            class="individual-item"
+            onclick="selectVeggies(this,'https://cdn.glitch.com/66b79a4c-6736-4abd-a3f0-36c3e17cba4e%2Fblack_olive.png?v=1607287629272')"
+          >
+            Black Olives
+          </li>
+          <li
+            class="individual-item"
+            onclick="selectVeggies(this,'https://cdn.glitch.com/66b79a4c-6736-4abd-a3f0-36c3e17cba4e%2Fcherry_tomato.png?v=1607287629743')"
+          >
+            Cherry Tomatoes
+          </li>
+          <li
+            class="individual-item"
+            onclick="selectVeggies(this,'https://cdn.glitch.com/66b79a4c-6736-4abd-a3f0-36c3e17cba4e%2Ffresh_basil.png?v=1607287629775')"
+          >
+            Fresh Basil
+          </li>
+          <li
+            class="individual-item"
+            onclick="selectVeggies(this,'https://cdn.glitch.com/66b79a4c-6736-4abd-a3f0-36c3e17cba4e%2Fgarilic.png?v=1607287629141')"
+          >
+            Garlic
+          </li>
+          <li
+            class="individual-item"
+            onclick="selectVeggies(this,'https://cdn.glitch.com/66b79a4c-6736-4abd-a3f0-36c3e17cba4e%2Fgreen_pepper.png?v=1607287628801')"
+          >
+            Green Bell Pepper
+          </li>
+          <li
+            class="individual-item"
+            onclick="selectVeggies(this,'https://cdn.glitch.com/66b79a4c-6736-4abd-a3f0-36c3e17cba4e%2Fjalapeneo.png?v=1607289954612')"
+          >
+            Jalapenos
+          </li>
+          <li
+            class="individual-item"
+            onclick="selectVeggies(this,'https://cdn.glitch.com/66b79a4c-6736-4abd-a3f0-36c3e17cba4e%2FKalamata_Olives.png?v=1607289953661')"
+          >
+            Kalamata Olives
+          </li>
+          <li
+            class="individual-item"
+            onclick="selectVeggies(this,'https://cdn.glitch.com/66b79a4c-6736-4abd-a3f0-36c3e17cba4e%2Fmushrooms.png?v=1607289953761')"
+          >
+            Mushrooms
+          </li>
+          <li
+            class="individual-item"
+            onclick="selectVeggies(this,'https://cdn.glitch.com/66b79a4c-6736-4abd-a3f0-36c3e17cba4e%2Fpineapple.png?v=1607293776176')"
+          >
+            Pineapple
+          </li>
+          <li
+            class="individual-item"
+            onclick="selectVeggies(this,'https://cdn.glitch.com/66b79a4c-6736-4abd-a3f0-36c3e17cba4e%2Fred_onion.png?v=1607293775565')"
+          >
+            Red Onions
+          </li>
+          <li
+            class="individual-item"
+            onclick="selectVeggies(this,'https://cdn.glitch.com/66b79a4c-6736-4abd-a3f0-36c3e17cba4e%2Froasted_garlic.png?v=1607293775945')"
+          >
+            Roasted Garlic
+          </li>
+          <li
+            class="individual-item"
+            onclick="selectVeggies(this,'https://cdn.glitch.com/66b79a4c-6736-4abd-a3f0-36c3e17cba4e%2Froasted_red_pepper.png?v=1607293775772')"
+          >
+            Roasted Red Peppers
+          </li>
+          <li
+            class="individual-item"
+            onclick="selectVeggies(this,'https://cdn.glitch.com/66b79a4c-6736-4abd-a3f0-36c3e17cba4e%2Fspinach.png?v=1607293775991')"
+          >
+            Spinach
+          </li>
+          <li
+            class="individual-item"
+            onclick="selectVeggies(this,'https://cdn.glitch.com/66b79a4c-6736-4abd-a3f0-36c3e17cba4e%2Fseasonal_veggies.png?v=1607293775871')"
+          >
+            Seasonal Veggie
+          </li>
+        </ul>
+        </div>
+         </div>
+      <div>
+        
+     
+
+      <h2 class="finishes_title">
+        Finishes
+      </h2>
+      <div class="finishes">
+        <ul class="ingredient-list" id="finishes-list">
+          <li
+            class="individual-item"
+            onclick="selectFinishes(this,'https://cdn.glitch.com/66b79a4c-6736-4abd-a3f0-36c3e17cba4e%2FArugula.png?v=1607295554182')"
+          >
+            Arugula
+          </li>
+          <li
+            class="individual-item"
+            onclick="selectFinishes(this,'https://cdn.glitch.com/66b79a4c-6736-4abd-a3f0-36c3e17cba4e%2Fbbq_drizzle.png?v=1607295553488')"
+          >
+            BBQ Sauce Drizzle
+          </li>
+          <li
+            class="individual-item"
+            onclick="selectFinishes(this,'https://i.ibb.co/0Ksccdk/Frank-s-Red-Hot-Sauce-Drizzle.png')"
+          >
+            Frank's RedHot Sauce Drizzle
+          </li>
+          <li
+            class="individual-item"
+            onclick="selectFinishes(this,'https://cdn.glitch.com/66b79a4c-6736-4abd-a3f0-36c3e17cba4e%2Folive_oil_drizzle.png?v=1607300596049')"
+          >
+            Olive Oil Drizzle
+          </li>
+          <li
+            class="individual-item"
+            onclick="selectFinishes(this,'https://cdn.glitch.com/66b79a4c-6736-4abd-a3f0-36c3e17cba4e%2FPesto_Drizzle.png?v=1607300596025')"
+          >
+            Pesto Drizzle
+          </li>
+          <li
+            class="individual-item"
+            onclick="selectFinishes(this,'https://cdn.glitch.com/66b79a4c-6736-4abd-a3f0-36c3e17cba4e%2FBalsamic_Glaze.png?v=1607300595817')"
+          >
+            Balsamic Glaze
+          </li>
+          <li
+            class="individual-item"
+            onclick="selectFinishes(this,'')"
+          >
+            Buttermilk Ranch on the Side
+          </li>
+          <li
+            class="individual-item"
+            onclick="selectFinishes(this,'https://cdn.glitch.com/66b79a4c-6736-4abd-a3f0-36c3e17cba4e%2Fbutter_milk_ranch.png?v=1607300597105')"
+          >
+            Buttermilk Ranch Drizzle
+          </li>
+          <li
+            class="individual-item"
+            onclick="selectFinishes(this,'https://cdn.glitch.com/66b79a4c-6736-4abd-a3f0-36c3e17cba4e%2Foregano.png?v=1607300596563')"
+          >
+            Oregano
+          </li>
+        </ul>
+      </div>
+         </div>
+
+      <button id="myFinish">Finish My Build</button>
+    </section>
+    </div>
+    
+  </body>
 </html>
+
+
+

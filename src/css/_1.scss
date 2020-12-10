@@ -1,0 +1,608 @@
+.logo{
+	width:40%;
+	margin-top: 10px;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),0 6.7px 5.3px rgba(0, 0, 0, 0.048),0 12.5px 10px rgba(0, 0, 0, 0.06),0 22.3px 17.9px rgba(0, 0, 0, 0.072),0 41.8px 33.4px rgba(0, 0, 0, 0.086),0 100px 80px rgba(0, 0, 0, 0.12);
+    position:relative;
+	z-index:3;
+	
+}
+body{
+	font-family:'Josefin Sans', sans-serif;
+	text-align:center;
+	color:white;
+	height:auto;
+}
+.pizza{
+	width:100%;
+	padding-top: 53px;
+	margin-right:13%;
+	;
+}
+.pizza_background {
+	position: relative;
+	width: 200px;
+	height: 250px;
+	margin: 0 auto;
+	z-index: 0;
+}
+.pizza_div {
+	position: relative;
+	width: 200px;
+	height: 250px;
+	margin: 0 auto;
+	margin-top: -250px;
+	z-index: 1;
+}
+@media only screen and (min-width: 1024px) {
+	.pizza{
+		width:180%;
+		position: relative;
+		left:250px;
+		top:10px;
+	}
+	.sml{
+		padding-left:660px;
+		padding-top:200px;
+		z-index:8;
+	}
+	#Dough{
+		width:180%;
+		left:250px;
+		position:relative;
+		top:10px;
+	}
+	#Sauce{
+		width:180%;
+		left:250px;
+		position:relative;
+		top:10px;
+	}
+	#Cheese{
+		width:180%;
+		left:250px;
+		position:relative;
+		top:10px;
+	}
+	#Meats{
+		width:180%;
+		left:250px;
+		position:relative;
+		top:10px;
+	}
+	#Veggies{
+		width:180%;
+		left:250px;
+		position:relative;
+		top:10px;
+	}
+	#Finishes{
+		width:180%;
+		left:250px;
+		position:relative;
+		top:10px;
+	}
+	.pizza_image{
+		width: 1000px;
+		padding-top: 53px;
+	}
+	.yellow_background{
+		width:450px;
+		height:650px;
+		margin-top:180px;
+		margin-left:-5px;
+		left:100px;
+		z-index:4;
+		top:30px;
+		overflow:scroll;
+		position:absolute;
+		border-radius: 25px;
+		margin-bottom:auto;
+		box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),0 6.7px 5.3px rgba(0, 0, 0, 0.048),0 12.5px 10px rgba(0, 0, 0, 0.06),0 22.3px 17.9px rgba(0, 0, 0, 0.072),0 41.8px 33.4px rgba(0, 0, 0, 0.086),0 100px 80px rgba(0, 0, 0, 0.12);
+		overflow-x:hidden;
+	}
+	.yellow_background::-webkit-scrollbar {
+		width: 0 
+}
+	.yellow-background {
+		background-color:#162937;
+		margin-bottom:auto;
+		overflow:hidden;
+		margin-top:-90%;
+	}
+	.blue-background{
+		height:900px;
+	}
+}
+.pizza_image {
+	display: block;
+	width: 200px;
+	padding-top: 53px;
+}
+.sauce_div {
+	position: relative;
+	width: 200px;
+	height: 250px;
+	margin: 0 auto;
+	margin-top: -250px;
+	z-index: 2;
+}
+.sauce_image {
+	display: block;
+	width: 200px;
+	padding-top: 53px;
+}
+.cheese_div{
+	position: relative;
+	width: 200px;
+	height: 250px;
+	margin: 0 auto;
+	margin-top: -250px;
+	z-index: 3;
+}
+.cheese_image {
+	display: block;
+	width: 200px;
+	padding-top: 53px;
+}
+.meats_div{
+	position: relative;
+	width: 200px;
+	height: 250px;
+	margin: 0 auto;
+	margin-top: -250px;
+	z-index: 4;
+}
+.meats_image {
+	display: block;
+	width: 200px;
+	padding-top: 53px;
+}
+.veggies_div{
+	position: relative;
+	width: 200px;
+	height: 250px;
+	margin: 0 auto;
+	margin-top: -250px;
+	z-index: 5;
+}
+.veggies_image {
+	display: block;
+	width: 200px;
+	padding-top: 53px;
+}
+.finishes_div{
+	position: relative;
+	width: 200px;
+	height: 250px;
+	margin: 0 auto;
+	margin-top: -250px;
+	z-index: 6;
+}
+.finishes_image {
+	display: block;
+	width: 200px;
+	padding-top: 53px;
+}
+.yellow-background {
+	background-color: #F6C041;
+	padding-top:85%;
+	padding-bottom:30%;
+}
+.blue-background {
+	background-color:#162937;
+	overflow-x: hidden;
+	border-bottom-left-radius: 100px;
+	border-bottom-right-radius: 100px;
+	position: absolute;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.byo{
+	background-color:#B1B1B1;
+	border-radius:25px;
+	margin-left:175px;
+	margin-top: 10px;
+	width:130px;
+	height:30px;
+	font-size:8px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1px;
+	position: relative;
+	top: 15px;
+	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),0 6.7px 5.3px rgba(0, 0, 0, 0.048),0 12.5px 10px rgba(0, 0, 0, 0.06),0 22.3px 17.9px rgba(0, 0, 0, 0.072),0 41.8px 33.4px rgba(0, 0, 0, 0.086),0 100px 80px rgba(0, 0, 0, 0.12);
+}
+.sidepanel {
+	width: 0;
+	position: fixed;
+	z-index: 7;
+	height: 250px;
+	top: 0;
+	left: 0;
+	background-color: #F6C041;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
+	border-radius:20px;
+	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),0 6.7px 5.3px rgba(0, 0, 0, 0.048),0 12.5px 10px rgba(0, 0, 0, 0.06),0 22.3px 17.9px rgba(0, 0, 0, 0.072),0 41.8px 33.4px rgba(0, 0, 0, 0.086),0 100px 80px rgba(0, 0, 0, 0.12);
+}
+.sidepanel a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #FFFFFF;
+	display: block;
+	transition: 0.3s;
+	font-family: 'Josefin Sans', sans-serif;
+}
+.sidepanel a:hover {
+	color: #E26B2B;
+}
+.sidepanel .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+}
+.openbtn {
+	font-size: 20px;
+	cursor: pointer;
+	background-color: transparent;
+	color: white;
+	padding: 10px 15px;
+	border: none;
+	border-radius:10px;
+	float: left;
+	position: relative;
+	bottom: 23px;
+	left: 25px;
+	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),0 6.7px 5.3px rgba(0, 0, 0, 0.048),0 12.5px 10px rgba(0, 0, 0, 0.06),0 22.3px 17.9px rgba(0, 0, 0, 0.072),0 41.8px 33.4px rgba(0, 0, 0, 0.086),0 100px 80px rgba(0, 0, 0, 0.12);
+}
+.openbtn:hover {
+	background-color:#F6C041;
+}
+#myBtn{
+	color:white;
+	border: none;
+	background-color: inherit;
+	padding: 14px 28px;
+	font-size: 16px;
+	cursor: pointer;
+	display: inline-block;
+	border-radius:35px;
+	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),0 6.7px 5.3px rgba(0, 0, 0, 0.048),0 12.5px 10px rgba(0, 0, 0, 0.06),0 22.3px 17.9px rgba(0, 0, 0, 0.072),0 41.8px 33.4px rgba(0, 0, 0, 0.086),0 100px 80px rgba(0, 0, 0, 0.12);
+}
+#myBtn:hover {
+	color: white;
+	font-size:30px;
+	font-weight:bolder;
+	background-color:#F6CA57;
+}
+#myBtn.active {
+	background-color:#E26B2B;
+	color: white;
+	outline: inherit;
+}
+#myBtn1{
+	color:white;
+	border: none;
+	background-color: inherit;
+	padding: 14px 28px;
+	font-size: 16px;
+	cursor: pointer;
+	display: inline-block;
+	border-radius:35px;
+	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),0 6.7px 5.3px rgba(0, 0, 0, 0.048),0 12.5px 10px rgba(0, 0, 0, 0.06),0 22.3px 17.9px rgba(0, 0, 0, 0.072),0 41.8px 33.4px rgba(0, 0, 0, 0.086),0 100px 80px rgba(0, 0, 0, 0.12);
+}
+#myBtn1:hover {
+	background-color: #F6CA57;
+	color: white;
+	font-size:30px;
+	font-weight:bolder;
+}
+#myBtn1.active {
+	background-color:#E26B2B;
+	color: white;
+	outline: inherit;
+}
+#myBtn2{
+	color:white;
+	border: none;
+	background-color: inherit;
+	padding: 14px 28px;
+	font-size: 16px;
+	cursor: pointer;
+	display: inline-block;
+	border-radius:35px;
+	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),0 6.7px 5.3px rgba(0, 0, 0, 0.048),0 12.5px 10px rgba(0, 0, 0, 0.06),0 22.3px 17.9px rgba(0, 0, 0, 0.072),0 41.8px 33.4px rgba(0, 0, 0, 0.086),0 100px 80px rgba(0, 0, 0, 0.12);
+}
+#myBtn2:hover {
+	background-color: #F6CA57;
+	color: white;
+	font-size:30px;
+	font-weight:bolder;
+}
+#myBtn2.active {
+	background-color:#E26B2B;
+	color: white;
+	outline: inherit;
+}
+#demo{
+	color:white;
+}
+#myFinish{
+	color:white;
+	border: none;
+	width: 20px;
+	background-color:#162937;
+	width: 150px;
+	padding: 15px;
+	font-size: 16px;
+	cursor: pointer;
+	display: inline-block;
+	border-radius:10px;
+	font-family: 'Josefin Sans', sans-serif;
+	top: 100px;
+	position: relative;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#myFinish:hover {
+	background-color: #D34F09;
+	color: white;
+	font-size:16px;
+	font-weight:bolder;
+	font-family: 'Josefin Sans', sans-serif;
+	outline: inherit;
+}
+h2 {
+	font-family: "Josefin Sans", sans-serif;
+	color: white;
+	position: relative;
+	top: 50px;
+}
+.dough {
+	background: #F5F5F5;
+	border-radius: 30px;
+	width: 290px;
+	padding: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	top: 50px;
+}
+.sauce {
+	background: #F5F5F5;
+	border-radius: 30px;
+	width: 290px;
+	padding: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	top: 50px;
+}
+.cheese {
+	background: #F5F5F5;
+	border-radius: 30px;
+	width: 290px;
+	padding: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	top: 50px;
+}
+.meats {
+	background: #F5F5F5;
+	border-radius: 30px;
+	width: 290px;
+	padding: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	top: 50px;
+}
+.veggies {
+	background: #F5F5F5;
+	border-radius: 30px;
+	width: 290px;
+	padding: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	top: 50px;
+}
+.finishes {
+	background: #F5F5F5;
+	border-radius: 30px;
+	width: 290px;
+	padding: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	top: 50px;
+}
+.ingredient-list {
+	list-style-type: none;
+}
+.individual-item {
+	background: white;
+	border-radius: 30px;
+	padding: 15px 20px;
+	width: 238px;
+	position: relative;
+	right: 35px;
+	font-family: "Josefin Sans", sans-serif;
+	color: #707070;
+	font-weight: 700;
+	margin: 15px;
+	right: 48px;
+}
+.individual-item-orange {
+	background: #E26B2B;
+	border-radius: 30px;
+	padding: 15px 20px;
+	width: 238px;
+	position: relative;
+	right: 35px;
+	font-family: "Josefin Sans", sans-serif;
+	color: white;
+	margin: 15px;
+	right: 48px;
+	box-shadow: 0px 5px 6px #C6C6C6;
+}
+.vegan-choice {
+	font-size: 10px;
+	padding: 15px 5px;
+	font-family: "Josefin Sans", sans-serif;
+}
+.new {
+	font-size: 8px;
+	margin-right: 5px;
+}
+.sauce-image-1 {
+	width: 76px;
+	height: 76px;
+	float: right;
+	bottom: 30px;
+	position: relative;
+}
+.sauce-image-2 {
+	width: 76px;
+	height: 76px;
+	float: right;
+	bottom: 45px;
+	position: relative;
+}
+.sauce-image-3 {
+	width: 76px;
+	height: 76px;
+	float: right;
+	bottom: 54px;
+	position: relative;
+}
+.sauce-image-4 {
+	width: 76px;
+	height: 76px;
+	float: right;
+	bottom: 30px;
+	left:2px;
+	position: relative;
+}
+.sauce-image-5 {
+	width: 76px;
+	height: 76px;
+	float: right;
+	bottom: 45px;
+	left: 5px;
+	position: relative;
+}
+.scroll_fixed{
+	position: fixed;
+	top: -150px;
+	z-index: 1;
+}
+@media screen and ( min-width: 768px ) and (max-width: 1024px){
+	body {
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		overflow-x: hidden;
+	}
+	#myFinish {
+		position: reletive;
+		left: 320px;
+	}
+	.pizza {
+		width: 120%;
+		margin-left: -10%;
+		margin-top:-10%;
+	}
+	.pizza_image {
+		width: 120%;
+		margin-left: -10%;
+		position: relative;
+		top:-8%;
+	}
+	.sauce_image {
+		width: 120%;
+		margin-left: -10%;
+		position: relative;
+		top:-8%;
+	}
+	.cheese_image {
+		max-width:120%;
+		width:120%;
+		margin-left: -10%;
+		position: relative;
+		top:-8%;
+	}
+	.meats_image {
+		width: 120%;
+		margin-left: -10%;
+		position: relative;
+		top:-8%;
+	}
+	.veggies_image {
+		width: 250px;
+		margin-left: -10%;
+		position: relative;
+		top:-8%;
+	}
+	.finishes_image {
+		width: 130%;
+		margin-left: -15%;
+		position: relative;
+		top:-12%;
+	}
+	.yellow-background {
+		padding-top:60%;
+		padding-bottom: 20%;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.byo {
+		padding: 5px;
+	}
+	.openbtn {
+		padding: 15px 20px;
+		font-size: 25px;
+		bottom:40px;
+	}
+	.sml {
+		margin-top: 18px;
+	}
+	.sauce {
+		overflow: scroll;
+		height: 323px;
+	}
+	.sauce::-webkit-scrollbar {
+		width: 0 
+}
+	.cheese {
+		height:460px;
+		overflow: scroll;
+	}
+	.cheese::-webkit-scrollbar {
+		width: 0 
+}
+	.veggies {
+		height:455px;
+		overflow: scroll;
+	}
+	.veggies::-webkit-scrollbar {
+		width: 0 
+}
+	.finishes {
+		height:460px;
+		overflow: scroll;
+	}
+	.finishes::-webkit-scrollbar {
+		width: 0 
+}
+
+}

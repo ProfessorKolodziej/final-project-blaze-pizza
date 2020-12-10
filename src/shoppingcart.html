@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;700&display=swap"
+      rel="stylesheet"
+    />
+
+  <head>
+   <style>
+     body {
+  background-color:#F4E1A1;
+;
+  background-size: 100%;
+font-family: 'Josefin Sans';
+  font-size:15px;
+  text-align:center;
+}
+
+#myBar{
+  background-color:#e26b2b;
+  width:0;
+  padding:10px;
+  border-radius:15px;
+    font-size:12px;
+  color:white;
+}
+
+#myProgress{
+  width:95%;
+  background-color:white;
+  border-radius:15px;
+}
+
+#myClick{
+  color:grey;
+    border: none;
+    background-color: white;
+     padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+    border-radius:35px; 
+  font-family:'Josefin Sans', sans-serif;
+}
+     
+     #myClick:hover{
+       background-color: #D34F09;
+  color: white;
+  font-size:20px;
+    font-weight:bolder;
+        font-family:'Josefin Sans', sans-serif;
+     }
+    </style>
+    <title>Finish You Pizza</title>
+    
+  </head>  
+  
+  <body>
+    <img class="logo" src="https://cdn.glitch.com/7e934bf3-11ca-4ed8-bb0e-af5a28599d9f%2F24403.png?v=1604357916769" alt="logo">
+    
+
+    
+    <h5 class='title'>Finish Your Pizza</h5>
+    
+        <div id="mySidepanel" class="sidepanel">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="index.html">Home</a>
+    <a href="new-pizza.html">New Pizzas</a>
+    <a href="about-blaze.html">Blaze Pizza</a>
+    <a href="about-us.html">About us</a>
+  </div>
+  
+  <button class="openbtn" onclick="openNav()">☰</button>  
+    
+        <img id="myPizza" class="pizza" src="https://cdn.glitch.com/7e934bf3-11ca-4ed8-bb0e-af5a28599d9f%2Fblaze%20pizza%202.png?v=1604358058472"width="400" alt="pizza">
+     <div id = "myProgress">       
+    <div id = "myBar">0%</div>
+    </div>
+    <br>
+    <button id = "myClick" onclick = "move()">
+      Cook
+    </button>
+    </body>
+  <script>
+    function openNav() {
+      document.getElementById("mySidepanel").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidepanel").style.width = "0";
+    }
+
+    var i = 0;
+    let img = document.querySelector('#myPizza');
+function move() {
+  if (i == 0) {
+    i = 1;
+    var elem = document.getElementById("myBar");
+    var width = 10;
+    var id = setInterval(frame, 10);
+    function frame() {
+      if (width >= 100) {
+        img.src = 'https://cdn.glitch.com/7e934bf3-11ca-4ed8-bb0e-af5a28599d9f%2F2.png?v=1604435160232'
+        clearInterval(id);
+        i = 0;
+      } else {
+        width++;
+        elem.style.width = width + "%";
+        elem.innerHTML = width  + "%";
+      }
+    }
+  }
+}
+
+
+
+  </script>
+</html>

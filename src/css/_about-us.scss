@@ -1,0 +1,99 @@
+/* CSS files add styling rules to your content */
+
+body {
+    font-family: "Josefin Sans", sans-serif;
+    color:white;
+    text-align:center;
+  }
+  
+  .logo{
+    max-width:50%;
+  }
+  
+  .openbtn{
+  padding-top:0;
+  }
+  
+  .title{
+    background-color:#B2A9A9;
+    border-radius:25px;
+    margin-left:34%;
+    width:90px;
+    height:20px;;
+    font-size:80%;
+    text-align:center;
+    padding-top:6px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  
+  .paragraph{
+    text-align:center;
+    color:white;
+    padding:15px;
+    color:#534A4A;
+  } 
+  
+  .roles{
+    color:white;
+    text-align:center;
+    color:#534A4A;
+  }
+  
+  .each-role{
+    text-align:center;
+    color:white;
+    margin:0;
+    color:#534A4A;
+  }
+  .sidepanel  {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 250px;
+    top: 0;
+    left: 0;
+    background-color: #F6C041;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    border-radius:20px;
+    text-align:center;
+  }
+  
+  .sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #FFFFFF;
+    display: block;
+    transition: 0.3s;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  
+  .sidepanel a:hover {
+    color: #E26B2B;
+  }
+  
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+   background-color: transparent;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius:10px;
+    float: left;
+    margin-top:-43px;
+  }
+  
+  .openbtn:hover {
+    background-color:#F6C041;
+  }

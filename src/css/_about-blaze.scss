@@ -1,0 +1,155 @@
+/* CSS files add styling rules to your content */
+body{
+    font-family: "Josefin Sans", sans-serif;
+  color:white;
+  text-align:center;
+    color:#534A4A;
+}
+
+.logo{
+  max-width:50%;
+}
+
+.title{
+  background-color:#B2A9A9;
+  border-radius:25px;
+  width:90px;
+  height:20px;;
+  font-size:80%;
+  text-align:center;
+  padding-top:6px;
+  margin-left:auto;
+  margin-right:auto;
+  color:white;
+}
+
+.content{
+ display:grid;
+ grid-template-columns:repeat(2,1fr);
+}
+
+.stove{
+  max-width:200px;
+}
+
+.pizza-in-pan{
+  max-width:200px;
+  margin-left:auto;
+  margin-top:50px;
+}
+
+.pizza{
+  max-width:200px;
+}
+
+.sidepanel  {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: 250px;
+  top: 0;
+  left: 0;
+  background-color: #F6C041;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  border-radius:20px;
+}
+
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #FFFFFF;
+  display: block;
+  transition: 0.3s;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.sidepanel a:hover {
+  color: #E26B2B;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+ background-color: transparent;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius:10px;
+  float: left;
+}
+
+.openbtn:hover {
+  background-color:#F6C041;
+}
+
+
+@media only screen and (min-width: 768px)  {
+  .content{
+    display:content;
+  }
+
+  .first-paragraph{
+    margin-left:-220px;
+    margin-right:250px;
+  }
+  .second-paragraph{
+    margin-right:200px;
+  }
+  
+  .pizza-in-pan{
+    margin-top:-200px;
+  }
+  
+  .pizza{
+    margin-left:390px;
+    margin-top:-210px;
+    margin-right:auto;
+  }
+  .third-paragraph{
+    margin-top:-150px;
+    margin-left:10px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+   .content{
+    display:content;
+  }
+  .stove{
+    margin-left:50px;
+  }
+  .first-paragraph{
+    
+    margin-right:500px;
+  }
+  .second-paragraph{
+    float:right;
+    margin-right:200px;
+    width:400px;
+  }
+  
+  .pizza-in-pan{
+    margin-top:-215px;
+    margin-right:150px;
+  }
+  
+  .pizza{
+    margin-left:500px;
+    margin-top:-200px;
+  }
+  .third-paragraph{
+    margin-top:-150px;
+    margin-left:70px;
+    width:300px;
+  }
+}
