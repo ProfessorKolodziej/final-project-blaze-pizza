@@ -29,10 +29,12 @@ function myFunction2() {
 function openNav() {
   document.getElementById('mySidepanel').style.width = '250px';
 }
-document.querySelector('openBtn').addEventListener('click',openNav);
+document.querySelector('openBtn').addEventListener('click', openNav);
 
 function closeNav() {
-  document.getElementById('mySidepanel').style.width = '0';
+  if (document.getElementById('mySidepanel') !== null) {
+    document.getElementById('mySidepanel').style.width = '0';
+  }
 }
 
 document.getElementById('myFinish').onclick = function () {
