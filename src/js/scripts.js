@@ -29,13 +29,13 @@ function myFunction2() {
 function openNav() {
   document.getElementById('mySidepanel').style.width = '250px';
 }
-document.querySelector('openBtn').addEventListener('click', openNav);
+document.getElementById('openbtn').addEventListener('click', openNav);
 
-function closeNav() {
+$(".closebtn").click(function(){
   if (document.getElementById('mySidepanel') !== null) {
     document.getElementById('mySidepanel').style.width = '0';
   }
-}
+})
 
 document.getElementById('myFinish').onclick = function () {
   location.href = 'shoppingcart.html';
@@ -51,8 +51,10 @@ document.querySelector('body').onscroll = function () {
   }
 };
 
-function selectDouth(id, image) {
-  const isActive = $(id).hasClass('individual-item-orange');
+$('.clickDouth').click(function(){
+  console.log('run')
+  console.log($(this).data('image'));
+  const isActive = $(this).hasClass('individual-item-orange');
   $('#dough-list li').each(function (i) {
     $(this).removeClass('individual-item-orange');
     $(this).removeClass('individual-item-orange');
@@ -60,18 +62,20 @@ function selectDouth(id, image) {
   });
   if (isActive == true) {
     $('#Dough').attr('src', '');
-    $(id).addClass('individual-item');
-    $(id).removeClass('individual-item-orange');
+    $(this).addClass('individual-item');
+    $(this).removeClass('individual-item-orange');
   }
   if (isActive == false) {
-    $('#Dough').attr('src', image);
-    $(id).addClass('individual-item-orange');
-    $(id).removeClass('individual-item');
+    $('#Dough').attr('src', $(this).data('image'));
+    $(this).addClass('individual-item-orange');
+    $(this).removeClass('individual-item');
   }
-}
+})
 
-function selectSauce(id, image) {
-  const isActive = $(id).hasClass('individual-item-orange');
+
+
+$('.clickSauce').click(function(){
+  const isActive = $(this).hasClass('individual-item-orange');
   $('#sauce-list li').each(function (i) {
     $(this).removeClass('individual-item-orange');
     $(this).removeClass('individual-item-orange');
@@ -79,18 +83,19 @@ function selectSauce(id, image) {
   });
   if (isActive == true) {
     $('#Sauce').attr('src', '');
-    $(id).addClass('individual-item');
-    $(id).removeClass('individual-item-orange');
+    $(this).addClass('individual-item');
+    $(this).removeClass('individual-item-orange');
   }
   if (isActive == false) {
-    $('#Sauce').attr('src', image);
-    $(id).addClass('individual-item-orange');
-    $(id).removeClass('individual-item');
+    $('#Sauce').attr('src', $(this).data('image'));
+    $(this).addClass('individual-item-orange');
+    $(this).removeClass('individual-item');
   }
-}
+})
 
-function selectCheese(id, image) {
-  const isActive = $(id).hasClass('individual-item-orange');
+$('.clickCheese').click(function(){
+  console.log("work")
+  const isActive = $(this).hasClass('individual-item-orange');
   $('#cheese-list li').each(function (i) {
     $(this).removeClass('individual-item-orange');
     $(this).removeClass('individual-item-orange');
@@ -98,18 +103,21 @@ function selectCheese(id, image) {
   });
   if (isActive == true) {
     $('#Cheese').attr('src', '');
-    $(id).addClass('individual-item');
-    $(id).removeClass('individual-item-orange');
+    $(this).addClass('individual-item');
+    $(this).removeClass('individual-item-orange');
   }
   if (isActive == false) {
-    $('#Cheese').attr('src', image);
-    $(id).addClass('individual-item-orange');
-    $(id).removeClass('individual-item');
+    $('#Cheese').attr('src',  $(this).data('image'));
+    $(this).addClass('individual-item-orange');
+    $(this).removeClass('individual-item');
   }
-}
+})
 
-function selectMeats(id, image) {
-  const isActive = $(id).hasClass('individual-item-orange');
+
+
+$('.clickMeats').click(function(){
+  console.log("work")
+  const isActive = $(this).hasClass('individual-item-orange');
   $('#meats-list li').each(function (i) {
     $(this).removeClass('individual-item-orange');
     $(this).removeClass('individual-item-orange');
@@ -117,18 +125,19 @@ function selectMeats(id, image) {
   });
   if (isActive == true) {
     $('#Meats').attr('src', '');
-    $(id).addClass('individual-item');
-    $(id).removeClass('individual-item-orange');
+    $(this).addClass('individual-item');
+    $(this).removeClass('individual-item-orange');
   }
   if (isActive == false) {
-    $('#Meats').attr('src', image);
-    $(id).addClass('individual-item-orange');
-    $(id).removeClass('individual-item');
+    $('#Meats').attr('src', $(this).data('image'));
+    $(this).addClass('individual-item-orange');
+    $(this).removeClass('individual-item');
   }
-}
+})
 
-function selectVeggies(id, image) {
-  const isActive = $(id).hasClass('individual-item-orange');
+$('.clickVeggies').click(function(){
+  console.log("work")
+  const isActive = $(this).hasClass('individual-item-orange');
   $('#veggies-list li').each(function (i) {
     $(this).removeClass('individual-item-orange');
     $(this).removeClass('individual-item-orange');
@@ -136,18 +145,19 @@ function selectVeggies(id, image) {
   });
   if (isActive == true) {
     $('#Veggies').attr('src', '');
-    $(id).addClass('individual-item');
-    $(id).removeClass('individual-item-orange');
+    $(this).addClass('individual-item');
+    $(this).removeClass('individual-item-orange');
   }
   if (isActive == false) {
-    $('#Veggies').attr('src', image);
-    $(id).addClass('individual-item-orange');
-    $(id).removeClass('individual-item');
+    $('#Veggies').attr('src',$(this).data('image'));
+    $(this).addClass('individual-item-orange');
+    $(this).removeClass('individual-item');
   }
-}
+})
 
-function selectFinishes(id, image) {
-  const isActive = $(id).hasClass('individual-item-orange');
+$('.clickFinishes').click(function(){
+  console.log("work")
+  const isActive = $(this).hasClass('individual-item-orange');
   $('#finishes-list li').each(function (i) {
     $(this).removeClass('individual-item-orange');
     $(this).removeClass('individual-item-orange');
@@ -155,15 +165,15 @@ function selectFinishes(id, image) {
   });
   if (isActive == true) {
     $('#Finishes').attr('src', '');
-    $(id).addClass('individual-item');
-    $(id).removeClass('individual-item-orange');
+    $(this).addClass('individual-item');
+    $(this).removeClass('individual-item-orange');
   }
   if (isActive == false) {
-    $('#Finishes').attr('src', image);
-    $(id).addClass('individual-item-orange');
-    $(id).removeClass('individual-item');
+    $('#Finishes').attr('src', $(this).data('image'));
+    $(this).addClass('individual-item-orange');
+    $(this).removeClass('individual-item');
   }
-}/* If you're feeling fancy you can add interactivity
+})/* If you're feeling fancy you can add interactivity
     to your site with Javascript */
 
 // prints "hi" in the browser's dev tools console
